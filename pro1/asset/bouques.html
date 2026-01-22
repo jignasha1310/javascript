@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bouquets | Petals & Blooms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-pink-600 tracking-tight">Petals & Blooms</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+                <a href="bouquets.html" class="text-pink-600 font-bold">Bouquets</a>
+                <a href="gallery.html" class="hover:text-pink-600 transition">Gallery</a>
+                <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+                <a href="order.html" class="relative">
+                    <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] rounded-full px-1.5">3</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-white border-b overflow-x-auto">
+        <div class="container mx-auto px-6 py-4 flex space-x-4 whitespace-nowrap">
+            <button class="px-6 py-2 rounded-full bg-pink-600 text-white font-medium">All Flowers</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 hover:bg-pink-100 transition font-medium">Romantic</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 hover:bg-pink-100 transition font-medium">Sympathy</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 hover:bg-pink-100 transition font-medium">Birthday</button>
+            <button class="px-6 py-2 rounded-full bg-gray-100 hover:bg-pink-100 transition font-medium">Wedding</button>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="flex flex-wrap -m-4">
+            
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <a href="order.html" class="block relative h-64 overflow-hidden">
+                        <img alt="flower" class="object-cover object-center w-full h-full block group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80">
+                        <div class="absolute top-4 right-4 bg-white/90 p-2 rounded-full shadow hover:text-pink-600 cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-pink-500 text-xs tracking-widest font-bold mb-1 uppercase">Spring Collection</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-bold">Tulip Paradise</h2>
+                        <p class="mt-1 font-semibold text-pink-600">$34.00</p>
+                        <button onclick="location.href='order.html'" class="w-full mt-4 bg-gray-900 text-white py-2 rounded-lg hover:bg-pink-600 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-plus text-xs"></i> Add to Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="flower" class="object-cover object-center w-full h-full block group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=500&q=80">
+                        <span class="absolute top-4 left-4 bg-pink-600 text-white text-[10px] font-bold px-2 py-1 rounded">HOT SELLER</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-pink-500 text-xs tracking-widest font-bold mb-1 uppercase">Luxury</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-bold">Velvet Crimson</h2>
+                        <p class="mt-1 font-semibold text-pink-600">$89.00</p>
+                        <button class="w-full mt-4 bg-gray-900 text-white py-2

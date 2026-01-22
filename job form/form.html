@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-strip">
+    <div class="font-controls">
+      
+    </div>
+</div>
+<div class="header">
+    <div class="header-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1cRe0KQ6vFHELc6wYZz88kOpI2OXYmTQ3hA&s" class="gov-logo">
+        <div class="title-text">
+            <div class="main-title">ONLINE JOB APPLICATION SYSTEM</div>
+            <div class="sub-title">Government of Gujarat</div>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <img src="data:image/jpeg;base64,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" class="ojas-logo">
+    </div>
+</div>
+<div class="menu-bar">
+    <a href="#">Home</a>
+    <a href="#">Registration ⏷</a>
+    <a href="#">Online Application ⏷ </a>
+    <a href="#">Upload ⏷</a>  
+    <a href="#">Fees ⏷</a>
+    <a href="#">Call Letter / Preference ⏷</a>
+    <a href="#">Other Application ⏷</a>
+</div>
+<div class="page-title">
+    Registration
+</div>
+<div class="container">
+    <div class="note-box">
+        <b class="red">Note :</b><br><br>
+        - Special Characters not allowed %<>()&+,” etc.<br>
+        - <span class="red">*</span> indicates mandatory field.
+    </div>
+    <div class="section">
+        <div class="section-title">
+            personal Details 
+        </div>
+        <div class="row">
+            <div class="field small">
+                <label>Title</label>
+                <select>
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Surname <span class="red"></span></label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>First Name <span class="red"></span></label>
+                <input type="text">
+            </div>
+            <div class="field">
+                <label>Father/Husband Name</label>
+                <input type="text">
+            </div>
+            <div class="field large">
+                <label>Mother's Name <span class="red"></span></label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="field">
+                <label>Gender <span class="red"></span></label>
+                <input type="radio" name="gender"> Male<br>
+                <input type="radio" name="gender"> Female
+            </div>
+            <div class="field">
+                <label>ReSelect Gender <span class="red"></span></label>
+                <input type="radio" name="rg"> Male<br>
+                <input type="radio" name="rg"> Female
+            </div>
+            <div class="field">
+                <label>Date of Birth <span class="red"></span></label>
+                <input type="text" placeholder="dd/mm/yyyy">
+            </div>
+            <div class="field">
+                <label>Marital Status <span class="red"></span></label><br>
+                <input type="radio" name="ms" checked> Married
+                <input type="radio" name="ms"> Unmarried
+                <input type="radio" name="ms"> Separated
+            </div>
+            <div class="field">
+                <label>Category <span class="red"></span></label>
+                <select>
+                    <option>Select</option>
+                    <option>General</option>
+                    <option>OBC</option>
+                    <option>SC</option>
+                    <option>ST</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">
+        Communication Details
+    </div>
+    <div class="comm-row">
+        <div class="comm-col">
+            <div class="comm-field">
+                <label>Present Address <span class="red"></span></label>
+                <textarea></textarea>
+            </div>
+            <div class="comm-field">
+                <label>State <span class="red"></span></label>
+                <select>
+                           <option>Gujarat</option>
+                       <option>Maharastra</option>
+                          <option>Rajasthan</option>
+                             <option>Punjab</option>
+                             <option>Tamil Nadu</option>
+                             <option>Mathy pradesh</option>
+                </select>
+            </div>
+            <div class="comm-field">
+                <label>District <span class="red"></span></label>
+                <select>
+                    <option>Select</option>
+                </select>
+            </div>
+            <div class="comm-field">
+                <label>Taluka <span class="red"></span></label>
+                <input type="text">
+            </div>
+            <div class="comm-field">
+                <label>PIN Code <span class="red"></span></label>
+                <input type="text">
+            </div>
+            <div class="comm-field">
+                <label>Mobile No <span class="red"></span></label>
+                <input type="text">
+                <div class="hint red">
+                    (OTP Will be Sent to Verify Mobile No)
+                </div>
+            </div>
+            <div class="comm-field">
+                <label>Re-Type Mobile No <span class="red"></span></label>
+                <input type="text">
+            </div>
+            <div class="comm-field">
+                <label>Nationality <span class="red"></span></label>
+                <input type="text" value="Indian">
+            </div>
+        </div>
+        <div class="comm-col">
+            <div class="comm-field">
+                <label>Permanent Address <span class="red"></span></label>
+                <textarea></textarea>
+            </div>
+            <div class="comm-field">
+                <label>State <span class="red"></span></label>
+                <select>
+                    <option>Gujarat</option>
+                       <option>Maharastra</option>
+                          <option>Rajasthan</option>
+                             <option>Punjab</option>
+                             <option>Tamil Nadu</option>
+                             <option>Mathy pradesh</option>
+                </select>
+            </div>
+            <div class="comm-field">
+                <label>District <span class="red"></span></label>
+                <select>
+                    <option>Select</option>
+                     <option>Select</option>
+                      <option>Select</option>
+                       <option>Select</option>
+                </select>
+            </div>
+            <div class="comm-field">
+                <label>Taluka <span class="red"></span></label>
+                 <select>
+                    <option>select</option>
+                </select>
+  
+            </div>
+
+            <div class="comm-field">
+                <label>pin code <span class="red"></span></label>
+                <input type="text">
+            </div>
+
+            <div class="comm-field">
+                <label>Email <span class="red"></span></label>
+                <input type="email">
+                <div class="hint red">
+                    Registration details will be Sent to EMAIL
+                </div>
+            </div>
+
+            <div class="comm-field">
+                <label>Re-type email <span class="red"></span></label>
+                <input type="email">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+  <div class="box-title">Other Details</div>
+
+  <div class="row">
+    <div class="col">
+      <label>Do you have a sports certificate?</label>
+      <div class="radio">
+        <label><input type="radio" name="sports"> Yes</label>
+        <label><input type="radio" name="sports"> No</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <label>Name of Sports</label>
+      <select>
+        <option>Select</option>
+      </select>
+    </div>
+
+    <div class="col">
+      <label>Sport Level</label>
+      <select>
+        <option>Select</option>
+      </select>sport level
+    </div>
+
+    <div class="col">
+      <label>Year of participation in the game</label>
+      <input type="text">
+    </div>
+  </div>
+  <hr class="light-line">
+  <div class="row">
+    <div class="col-full">
+      <label>Physically Challenged (As Per Published Advertisement Percentage)</label>
+      <div class="checkbox">
+        <label><input type="checkbox"> Blindness</label>
+        <label><input type="checkbox"> Low Vision</label>
+        <label><input type="checkbox"> Deaf & Dumb</label>
+        <label><input type="checkbox"> Hearing Handicap</label>
+        <label><input type="checkbox"> Orthopedics (OA, OL, BL, OAL)</label>
+        <label><input type="checkbox"> Other</label>
+        <label><input type="checkbox"> Not Applicable</label>
+      </div>
+    </div>
+  </div>
+
+  <hr class="light-line">
+
+  <div class="row">
+    <div class="col">
+      <label>Widow </label>
+      <div class="radio">
+        <label><input type="radio" name="widow"> Yes</label>
+        <label><input type="radio" name="widow"> No</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <label>Widow Certificate No.</label>
+      <input type="text">
+    </div>
+
+    <div class="col">
+      <label>Widow Certificate Date</label>
+      <input type="date">
+    </div>
+
+    <div class="col">
+      <label>Certifying authority</label>
+      <select>
+        <option>Select</option>
+      </select>
+    </div>
+  </div>
+
+  <hr class="light-line">
+  <div class="row">
+    <div class="col">
+      <label>Ex-Soldier (Army, Navy, Air Force)</label>
+      <div class="radio">
+        <label><input type="radio" name="ex"> Yes</label>
+        <label><input type="radio" name="ex"> No</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <label>From Date</label>
+      <input type="date">
+    </div>
+
+    <div class="col">
+      <label>To Date</label>
+      <input type="date">
+    </div>
+
+    <div class="col">
+      <label>Ex-Servicemen Identity Card No.</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <hr class="light-line">
+  <div class="row">
+    <div class="col">
+      <label>Currently working as Gujarat State Government Employee?</label>
+      <div class="radio">
+        <label><input type="radio" name="govt"> Yes</label>
+        <label><input type="radio" name="govt"> No</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <label>Joining Date in Government Service</label>
+      <input type="date">
+    </div>
+
+    <div class="col">
+      <label>Name of Department </label>
+      <input type="text">
+    </div>
+  </div>
+</div>
+<div class="two-box">
+  <div class="lang-box">
+    <div class="box-title">Language Details </div>
+
+    <table class="lang-table">
+      <tr>
+        <th>Language Proficiency</th>
+        <th>Language</th>
+        <th>Read</th>
+        <th>Write</th>
+        <th>Speak</th>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type="text" value="English" readonly></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type="text" value="Hindi" readonly></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><input type="text" value="Gujarati" readonly></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="photo-box">
+    <div class="photo-title">
+      Instructions for Uploading Photo AND Signature :-
+    </div>
+    <ol>
+      <li>Scan the photo and upload it in JPG format.</li>
+<li>The size of the photo should be 5 cm. Length and 3.6 cm. Width.</li>
+<li>The size of the photo and signature should not exceed 15 KB.</li>
+<li>If the size of the photo and signature is less than 15 KB, increase the DPI resolution of the scanner and scan.</li>
+<li>For the signature, sign it in black ink on white paper and upload it in JPG format.</li>
+<li>The size of the signature should be 2.5 cm. Length and 7.5 cm. Width.</li>
+    </ol>
+  </div>
+</div>
+<div class="upload-box">
+  <div class="upload-title">
+    Upload Photograph 
+  </div>
+  <div class="upload-content">
+    <p class="note">
+      <b>Note :</b> Quality of Photograph should be Good Enough to Be Identifiable and Acceptable.<br>
+    </p>
+    <div class="file-row">
+      <input type="file">
+    </div>
+    <button class="upload-btn">Upload</button>
+    <p class="size-note">
+      Photo size: 5 cm. Length 3.6 cm. Width<br>
+The size of the photo should not exceed 15 KB.
+    </p>
+
+  </div>
+</div>
+<div class="upload-box">
+  <div class="upload-title">
+    Upload Signature 
+  </div>
+  <div class="upload-content">
+    <p class="note">
+      <b>Note :</b> Please Sign on White Paper with Dark Pen and Scan it in JPG format.<br>
+    </p>
+    <div class="file-row">
+      <input type="file">
+    </div>
+    <button class="upload-btn">Upload</button>
+    <p class="size-note">
+     Signature size: 2.5 cm. Length 7.5 cm. Width<br>
+Signature size should not exceed 15 KB.
+    </p>
+  </div>
+</div>
+<div class="declare-box">
+  <div class="declare-header">
+    <h3>Declaration</h3>
+  </div>
+  <div class="declare-body">
+    <p class="declare-text">
+      I hereby declare that the above details are correct to the best of my knowledge.<br><br>
+Note: <b>ONE TIME REGISTRATION</b> is only a convenience for the candidate to apply.<br>
+The purpose of <b>ONE TIME REGISTRATION</b> is to make the application process easier for the candidate so that he does not have to fill his details repeatedly in the advertisement published online in OJAS. This does not mean that by doing REGISTRATION, he has applied for the advertisement (that advertisement/any advertisement).<br>
+The candidate will have to upload his application for that advertisement with or without OTR published by OJAS.
+    </p>
+    <div class="declare-radio">
+      <label>
+        <input type="radio" name="declaration"> Yes
+      </label>
+      <label>
+        <input type="radio" name="declaration"> NO
+      </label>
+    </div>
+  </div>
+</div>
+<div class="captcha-box">
+  <div class="captcha-header">
+    Captcha
+  </div>
+  <div class="captcha-body">
+    <div class="captcha-row">
+      <div class="captcha-text">3PR78</div>
+      <input type="text" class="captcha-input" placeholder="">
+    </div>
+  </div>
+</div>
+<div class="save-btn-wrap">
+  <button class="save-btn">Save</button>
+</div>
+</body>
+</html>

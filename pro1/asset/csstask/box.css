@@ -1,0 +1,261 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5ead5;
+  text-align: center;
+}
+
+header {
+  background: #503f3f;
+  color: rgb(233, 156, 151);
+  padding: 20px;
+  text-align: center;
+}
+
+
+.navbar, nav {
+  list-style: none;
+  display: flex;
+  background: #976f63;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a, nav a, .dropbtn {
+  color: rgb(243, 170, 170);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.navbar a:hover, nav a:hover, .dropbtn:hover {
+  background: #ad7d7d;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content, .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(126, 98, 81, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a, .dropdown-menu li a {
+  color: rgb(124, 108, 83);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover, .dropdown-menu li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.box-model .box {
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid #333;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.card {
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(146, 103, 103, 0.3);
+}
+
+
+.card .img {
+  width: 100%;
+  height: 150px;      
+  overflow: hidden;
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+  border:#5c3b51;
+}
+
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+.grid-section {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-item {
+  background: #5c3b51;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+.flex-container .box {
+  width: 60px;
+  background-color: #774e57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.pagination {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: rgb(105, 72, 72);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color:  rgb(105, 72, 72);
+  color: white;
+  border: 1px solid #9c6175;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #6e5467;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(105, 72, 72);
+  color: white;
+  border-radius: 5px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -70px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+footer {
+  background: #8a5663;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+

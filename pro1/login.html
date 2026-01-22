@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Petals & Blooms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col h-screen">
+
+  <div class="flex flex-1 flex-col md:flex-row h-full">
+    <div class="md:w-1/2 w-full h-64 md:h-full relative">
+        <img class="absolute inset-0 w-full h-full object-cover" src="./asset/hiro.jpg" alt="hero">
+    </div>
+
+    <div class="md:w-1/2 w-full flex items-center justify-center p-10 bg-white">
+        <div class="w-full max-w-sm">
+            <a href="home.html" class="text-pink-500 text-sm mb-4 block underline">← Back to Home</a>
+            <h1 class="text-3xl font-bold mb-6">Welcome Back</h1>
+            <form id="loginForm" novalidate class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-pink-500">
+                    <p id="emailErr" class="text-red-500 text-xs h-4 mt-1"></p>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Password</label>
+                    <input type="password" id="password" class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-pink-500">
+                    <p id="passErr" class="text-red-500 text-xs h-4 mt-1"></p>
+                </div>
+                <button type="submit" class="w-full bg-pink-500 text-white p-3 rounded-lg hover:bg-pink-600 font-bold transition">Sign In</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    
+<style>
+body{
+ 
+    background: linear-gradient(150deg,rgb(214, 141, 214),rgb(54, 3, 35));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    height: 800PX;
+    width: 800px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    border-radius: 300px;
+
+}
+.login-box{
+    background: white;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    padding: 50px;
+    text-align: center;
+}
+input{
+    width: 80%;
+    height: 80%;
+    padding: 12px;
+    background-color: white;
+}
+button{
+    background-color: rgba(79, 94, 230, 0.589);
+    height: inherit;
+}
+
+</style>
+
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="login-box">
+        
+            <h1>LOGIN</h1>  
+        <center>
+           <label for="email"></label> 
+        <input type="email" placeholder="Email" required>
+        <br> 
+        <input type="password" placeholder="password" ><br>
+        <br>
+        <input type="checkbox"><label for="remember">remember me</label><br>
+        <button type="submit">LOGIN</button><br>
+        <br>
+        <label for="or login with">OR login with</label><br>
+        <button type="submit">Facebook</button>  
+         <button type="submit">Goggle</button><br>
+        <br>
+        <label for="not a Member">Not a Member?</label> <a href="signup.html">Signup</a>
+        
+        </center>
+        </div>
+    </div>
+    </center>
+    
+</body>
+</html> -->

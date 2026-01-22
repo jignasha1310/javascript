@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <center><h2>Registration Form</h2>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" placeholder="Enter username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" placeholder="abc@.com"></td>
+        </tr>  
+        <tr>
+            <td>Phone:</td>
+            <td><input type="tel" name="phone" placeholder="123-456-7890"></td>
+        </tr>   
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age" min="1" max="120"></td> 
+        </tr>
+        <tr>
+            <td>Gender:</td>                                
+            <td><input type="radio" name="gender" value="male">
+                <label for="male">Male</label>                              
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label>                              
+                <input type="radio" name="gender" value="other">            
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <select name="country">
+                    <option value="usa">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">USA</option>
+                </select>
+            </td>  
+        </tr>
+        <tr>
+            <td>Bio:</td>
+            <td><textarea name="bio" rows="4" cols="30" placeholder="Tell us about yourself"></textarea></td>   
+        </tr>
+        <tr>
+            <td>Subscribe:</td>
+            <td><input type="checkbox" name="subscribe" value="yes"> Yes, I want to subscribe</td>
+        </tr>
+      
+        <tr>
+            <td>Profile Picture:</td>
+            <td><input type="file" name="profilepic" accept="image/*"></td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob"></td> 
+        </tr>
+    </table>
+     <button type="submit">Submit </button>
+</center>
+
+</form>
+<h1>Audio Example</h1>
+<audio controls>        
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+</audio>
+<h1>Video Example</h1>
+<iframe width="860" height="515" src="https://www.youtube.com/embed/8OdMRdcIeII?si=MEVG8ubwUIcxLOVi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h1>Image Example</h1>
+<img src="https://images.unsplash.com/photo-1527118732049-c88155f2107c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuZGF8ZW58MHx8MHx8fDA%3D" alt="Sample Image">
+
+<button>button 1</button>
+<input type="button" value="button2">
+<a href="#"><button>button 3</button></a>
+</body>
+</html>
